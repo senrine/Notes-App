@@ -1,5 +1,11 @@
+import NoteList from "./components/NoteList";
+
 function App() {
-  return <></>
+  return (
+    <>
+      <NoteList />
+    </>
+  );
 }
 
-export default App
+export default App;

@@ -19,8 +19,8 @@ const notes = createSlice({
 export function getNotesFromApi(action) {
   return function (dispatch, getState) {
     fetch("/data/notes.json")
-      .then((response) => response.json())
-      .then((data) => dispatch(addNotesFromApi(data.notes)));
+      .then(response => response.json())
+      .then(data => dispatch(addNotesFromApi(data.notes)));
   };
 }
 
